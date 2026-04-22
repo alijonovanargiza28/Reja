@@ -1,240 +1,291 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/author/menu_icon/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-  <script src="//maxcdn.bootstrapcdn. com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/author/menu_icon/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//maxcdn.bootstrapcdn. com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="frame">
-        <div class="main_frame">
-            <div class="left_frame">
-                <div class="left_1">
-                    <div class="left_1_1">
-                        <img src="/author/images/Profile.png">
-                    </div>
-                    <div class="left_1_2"> <%=user.name%> </div>
-                    <div class="left_1_3"><%=user.profession%></div>
-                    <div class="left_icons">
-                     
-                   
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
-                      </a>
-                    </div>
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-                      </a>
-                    </div>
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
-                      </a>
-                    </div>
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
-                      </a>
-                    </div>
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-brands fa-youtube"></i></div>
-                      </a>
-                    </div>
-                    <div class="left_icons">
-                      <a class="link_href">
-                       <div class="icon"><i class="fa-solid fa-futbol"></i></div>
-                      </a>
-                    </div>
-                </div>
-                   
-                </div>
-                <div class="margin"></div>
-                <div class="left_2">
-                    <div class="info">
-                    <div class="left2_1">Age:</div>
-                    <div class="left2_2"> <%=user.age%></div></div>
-                    <div class="info_item">
-                    <div class="left2_3">Residance:</div>
-                    <div class="left2_4">BD</div></div>
-                    <div class="info_item">
-                    <div class="left2_5">Freelance:</div>
-                    <div class="left2_6">Available</div></div>
-                    <div class="info_item">
-                    <div class="left2_7">Address:</div>
-                    <div class="left2_8"> <%=user.adress%></div></div>
-                    
-                </div>
-                 <div class="margin"></div>
-                  <div class="left_3">
-                    <div class="languages">
-  <h3>Languages</h3>
-
-  <div class="lang_item">
-    <div class="lang_top">
-      <span>Bangla</span>
-      <span>100%</span>
-    </div>
-    <div class="bar">
-      <div class="fill" style="width: 100%"></div>
-    </div>
-  </div>
-
-  <div class="lang_item">
-    <div class="lang_top">
-      <span>English</span>
-      <span>80%</span>
-    </div>
-    <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-  </div>
-
-  <div class="lang_item">
-    <div class="lang_top">
-      <span>Spanish</span>
-      <span>60%</span>
-    </div>
-    <div class="bar">
-      <div class="fill" style="width: 60%"></div>
-    </div>
-  </div>
-</div>
-
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1_1">
+              <img src="/author/images/Profile.png" />
+            </div>
+            <div class="left_1_2"><%=user.name%></div>
+            <div class="left_1_3"><%=user.profession%></div>
+            <div class="left_icons">
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
                   </div>
-                <div class="margin"></div>
-                <div class="left_4">
-                    <div class="Skills">
-                        <h3>Skills</h3>
-                        <div class="skill_item">
-                            <span>Html</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-                        <div class="skill_item">
-                            <span>CSS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-                        <div class="skill_item">
-                            <span>JS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-                        <div class="skill_item">
-                            <span>PHP</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-                        <div class="skill_item">
-                            <span>WorkPress</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="bar">
-      <div class="fill" style="width: 80%"></div>
-    </div>
-                </div>
-                </div>
-                 <div class="margin"></div>
-                 <div class="left_5">
-                    <div class="ExtraSkills">
-                        <h3>Extra Skills</h3>
-                       <div class="bottistrap"> <img src="/author/images/in.svg">
-                        <p>Bootstrap, Materialize</p></div>
-                        <div class="bottistrap"> <img src="/author/images/in.svg">
-                        <p>Stylus, Sass, Less</p></div>
-                        <div class="bottistrap"> <img src="/author/images/in.svg">
-                        <p>Gulp, Webpage,Grunt</p></div>
-                        <div class="bottistrap"> <img src="/author/images/in.svg">
-                        <p>GIT Knowledge</p></div>
-                    </div>
-                 </div>
-                 <div class="margin"></div>
+                </a>
+              </div>
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+              </div>
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+                </a>
+              </div>
+              <div class="left_icons">
+                <a class="link_href">
+                  <div class="icon"><i class="fa-solid fa-futbol"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="margin"></div>
+          <div class="left_2">
+            <div class="info">
+              <div class="left2_1">Age:</div>
+              <div class="left2_2"><%=user.age%></div>
+            </div>
+            <div class="info_item">
+              <div class="left2_3">Residance:</div>
+              <div class="left2_4">BD</div>
+            </div>
+            <div class="info_item">
+              <div class="left2_5">Freelance:</div>
+              <div class="left2_6">Available</div>
+            </div>
+            <div class="info_item">
+              <div class="left2_7">Address:</div>
+              <div class="left2_8"><%=user.adress%></div>
+            </div>
+          </div>
+          <div class="margin"></div>
+          <div class="left_3">
+            <div class="languages">
+              <h3>Languages</h3>
 
-            </div>
-            <div class="midd_frame">
-                <div class="midd_frame_top">
-                    <h1>Doctor neurologists <br>in OHSU Hospital</h1>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Praesentium dignissimos facilis voluptatum   <br>consectetur nobis cumque. Nostrum, alias enim!</p>
-                   <button >HIRE ME -></button>
-                  <div class="profile_img"> <img src="/author/images/imagaaa.png"></div>
-                  <div class="yum"><img src="/author/images/44.svg"></div>
-                  <div class="yum1"><img src="/author/images/45.svg"></div>
-                  <div class="yum2"><img src="/author/images/46.svg"></div>
-                  <div class="yum3"><img src="/author/images/47.svg"></div>
-                  <div class="yum4"><img src="/author/images/48.svg"></div>
-                  <div class="yum5"><img src="/author/images/49.svg"></div>
-                  <div class="yum6"><img src="/author/images/44.svg"></div>
-                  
+              <div class="lang_item">
+                <div class="lang_top">
+                  <span><%=user.languages[0]%></span>
+                  <span>100%</span>
                 </div>
-                <div class="midd_midd">
-                    <div class="midd_info">
-                    <h1>My Services</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit incidunt<br> illum quibusdam facilis sapiente? Quam. lorem ipsum Lorem ipsum dolor sit amet.
-                    </p></div>
-                    <div class="service_grid">
-                      <div class="card">
-                        <div class="service_icon"><img src="/author/images/Vector.svg"></div>
-                        <span>Web Developer</span>
-                        <p>Blog, E-commerce</p>
-                      </div>
-                      <div class="card">
-                        <div class="service_icon"><img src="/author/images/2.svg"></div>
-                        <span>UL/UX Design</span>
-                        <p>Mobile App, Website Design</p>
-                      </div>
-                      <div class="card">
-                        <div class="service_icon"><img src="/author/images/9.svg"></div>
-                        <span>Sound Design</span>
-                        <p>Voice Over,Beat Maing</p>
-                      </div>
-                      <div class="card">
-                        <div class="service_icon"><img src="/author/images/4.svg"></div>
-                        <span>Game Design</span>
-                        <p>Character Design, Props & Objecst</p>
-                      </div>
-                      <div class="card">
-                        <div class="service_icon"><img src="/author/images/5.svg"></div>
-                        <span>Photography</span>
-                        <p>Portrait, product photograph</p>
-                      </div>
-                      <div class="card">
-                        
-                        <span class="ader">Advertising</span>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                      </div>
-                      
-                      
-                    </div>
+                <div class="bar">
+                  <div class="fill" style="width: 100%"></div>
                 </div>
-            </div>
-            <div class="right_frame">
-                <div classs="right_iconss">
-                  <div class="icon_iconn"> <i class="fa-solid fa-house"></i></div>
-                   <div class="icon_icon"><i class="fa-solid fa-file"></i></div>
-                   <div class="icon_icon"><i class="fa-solid fa-user-graduate"></i></div>
-                   <div class="icon_icon"><i class="fa-solid fa-briefcase"></i></div>
-                   <div class="icon_icon"><i class="fa-solid fa-message"></i></div>
+              </div>
+
+              <div class="lang_item">
+                <div class="lang_top">
+                  <span><%=user.languages[1]%></span>
+                  <span>80%</span>
                 </div>
+                <div class="bar">
+                  <div class="fill" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div class="lang_item">
+                <div class="lang_top">
+                  <span><%=user.languages[2]%></span>
+                  <span>60%</span>
+                </div>
+                <div class="bar">
+                  <div class="fill" style="width: 60%"></div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="margin"></div>
+          <div class="left_4">
+            <div class="Skills">
+              <h3>Skills</h3>
+              <div class="skill_item">
+                <span>Html</span>
+                <span>90%</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+              <div class="skill_item">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+              <div class="skill_item">
+                <span>JS</span>
+                <span>80%</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+              <div class="skill_item">
+                <span>PHP</span>
+                <span>75%</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+              <div class="skill_item">
+                <span>WorkPress</span>
+                <span>85%</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="margin"></div>
+          <div class="left_5">
+            <div class="ExtraSkills">
+              <h3>Extra Skills</h3>
+              <div class="bottistrap">
+                <img src="/author/images/in.svg" />
+                <p>Bootstrap, Materialize</p>
+              </div>
+              <div class="bottistrap">
+                <img src="/author/images/in.svg" />
+                <p>Stylus, Sass, Less</p>
+              </div>
+              <div class="bottistrap">
+                <img src="/author/images/in.svg" />
+                <p>Gulp, Webpage,Grunt</p>
+              </div>
+              <div class="bottistrap">
+                <img src="/author/images/in.svg" />
+                <p>GIT Knowledge</p>
+              </div>
+            </div>
+          </div>
+          <div class="margin"></div>
         </div>
+        <div class="midd_frame">
+          <div class="midd_frame_top">
+            <h1>Doctor neurologists <br />in OHSU Hospital</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing<br />
+              elit. Praesentium dignissimos facilis voluptatum <br />consectetur
+              nobis cumque. Nostrum, alias enim!
+            </p>
+            <button>HIRE ME <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="profile_img">
+              <img src="/author/images/imagaaa.png" />
+            </div>
+            <div class="yum"><img src="/author/images/44.svg" /></div>
+            <div class="yum1"><img src="/author/images/45.svg" /></div>
+            <div class="yum2"><img src="/author/images/46.svg" /></div>
+            <div class="yum3"><img src="/author/images/47.svg" /></div>
+            <div class="yum4"><img src="/author/images/48.svg" /></div>
+            <div class="yum5"><img src="/author/images/49.svg" /></div>
+            <div class="yum6"><img src="/author/images/44.svg" /></div>
+          </div>
+          <div class="midd_midd">
+            <div class="midd_info">
+              <h1>My Services</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                <br />
+                do amet sint. Velit officia consequat duis enim velit mollit.
+                <br />
+                lorem ipsum
+              </p>
+            </div>
+            <div class="service_grid">
+              <div class="card">
+                <div class="service_icon">
+                  <img src="/author/images/Vector.svg" />
+                </div>
+                <span>Web Developer</span>
+                <p>Blog, E-commerce</p>
+              </div>
+              <div class="card">
+                <div class="service_icon">
+                  <img src="/author/images/2.svg" />
+                </div>
+                <span>UL/UX Design</span>
+                <p>Mobile App, Website Design</p>
+              </div>
+              <div class="card">
+                <div class="service_icon">
+                  <img src="/author/images/9.svg" />
+                </div>
+                <span>Sound Design</span>
+                <p>Voice Over,Beat Maing</p>
+              </div>
+              <div class="card">
+                <div class="service_icon">
+                  <img src="/author/images/4.svg" />
+                </div>
+                <span>Game Design</span>
+                <p>Character Design, Props & Objecst</p>
+              </div>
+              <div class="card">
+                <div class="service_icon">
+                  <img src="/author/images/5.svg" />
+                </div>
+                <span>Photography</span>
+                <p>Portrait, product photograph</p>
+              </div>
+              <div class="card">
+                <span class="ader">Advertising</span>
+                <p>
+                  Lorem ipsum dolor sit amet, <br />
+                  consectetur adipiscing elit. Vitae <br />
+                  nulla diam in ac dictum a urna <br />
+                  viverra morbi.
+                </p>
+                <a href="#"
+                  >ORDER NOW <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <img src="/author/menu_icon/Icons_Contrast.svg" alt="" />
+          <div classs="right_iconss">
+            <div class="icon_iconn"><i class="fa-solid fa-house"></i></div>
+            <div class="icon_icon"><i class="fa-solid fa-file"></i></div>
+            <div class="icon_icon">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="icon_icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="icon_icon"><i class="fa-solid fa-message"></i></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
