@@ -1,3 +1,4 @@
+//A TASK
 function countLetter(a,word){
     let hisob = 0;
     for(const harf of word){
