@@ -1,4 +1,3 @@
-
 //A TASK
 function countLetter(a,word){
     let hisob = 0;
@@ -93,7 +92,7 @@ const list = [
     "uzingizga ishlashni boshlang",//30-40
     "sizni kuchli qiladigan narsalarni qiling",//40-50
     "yoshlarga invistitsiya qiling",//50-60
-    "endi dam oling , foydasi yoq"//60
+    "endi dam oling "//60
 ];
 //ASYNC function 
 async function maslahatbering(a){
