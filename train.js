@@ -1,5 +1,32 @@
+//B Task
+// function chooseword(word){
+//     let hisob = 0;
+//     for(const harf of word){
+//         if(harf >= '0' && harf <= '9'){
+//             hisob++;
+//         }
+//     }
+//     return hisob;
+// }
+// console.log(chooseword("rejgi46745tehjs5876"))
+
+
+
+
+
 //A TASK
-function countLetter(a,word){
+// function countLetter(a,word){
+//     let hisob = 0;
+//     for(const harf of word){
+//         if(harf === a){
+//             hisob++;
+//         }
+//     }
+//     return hisob;
+// }
+// console.log(countLetter("a","Dianaaa"))
+
+function countletter(a,word){
     let hisob = 0;
     for(const harf of word){
         if(harf === a){
@@ -8,7 +35,7 @@ function countLetter(a,word){
     }
     return hisob;
 }
-console.log(countLetter("a","Dianaaa"))
+console.log(countletter("b", "bhfghbbrbfcbbbdbdfsb"))
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -85,53 +112,53 @@ console.log(countLetter("a","Dianaaa"))
 // });
 // console.log("passed here")
 
-console.log("Jack Ma maslahatlari");
-const list = [
-    "yahshi talaba boling",//0-20
-    "togrli boshliq tanlang va koproq hato qiling",//20-30
-    "uzingizga ishlashni boshlang",//30-40
-    "sizni kuchli qiladigan narsalarni qiling",//40-50
-    "yoshlarga invistitsiya qiling",//50-60
-    "endi dam oling "//60
-];
+// console.log("Jack Ma maslahatlari");
+// const list = [
+//     "yahshi talaba boling",//0-20
+//     "togrli boshliq tanlang va koproq hato qiling",//20-30
+//     "uzingizga ishlashni boshlang",//30-40
+//     "sizni kuchli qiladigan narsalarni qiling",//40-50
+//     "yoshlarga invistitsiya qiling",//50-60
+//     "endi dam oling "//60
+// ];
 //ASYNC function 
-async function maslahatbering(a){
-    if(typeof a !=='number')throw new Error("insert a number");
-    else if(a <=20 )return list[0];
-    else if(a > 20 && a <= 30 )return list[1];
-    else if(a > 30 && a <= 40 )return list[2];
-    else if(a > 40 && a <= 50 )return list[3];
-    else if(a > 50 && a <= 60 )return list[4];
-    else {
-        // return list[5];
-        return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            resolve(list[5]);
-        },5000);
-        })
+// async function maslahatbering(a){
+//     if(typeof a !=='number')throw new Error("insert a number");
+//     else if(a <=20 )return list[0];
+//     else if(a > 20 && a <= 30 )return list[1];
+//     else if(a > 30 && a <= 40 )return list[2];
+//     else if(a > 40 && a <= 50 )return list[3];
+//     else if(a > 50 && a <= 60 )return list[4];
+//     else {
+//         // return list[5];
+//         return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve(list[5]);
+//         },5000);
+//         })
 
         // setTimeout(function(){
         // return list[0];
         // },5000);
     
-    }
-    }
+    //}
+    //}
 
     // Call via asyn/await
 
-async function run(){
-  let javob = await maslahatbering(25);
-  console.log(javob);
-  javob = await maslahatbering(31);
-  console.log(javob);
-  javob = await maslahatbering(65);
-  console.log(javob);
-  javob = await maslahatbering(51);
-  console.log(javob);
-  javob = await maslahatbering(61);
-  console.log(javob);
-}
-run();
+// async function run(){
+//   let javob = await maslahatbering(25);
+//   console.log(javob);
+//   javob = await maslahatbering(31);
+//   console.log(javob);
+//   javob = await maslahatbering(65);
+//   console.log(javob);
+//   javob = await maslahatbering(51);
+//   console.log(javob);
+//   javob = await maslahatbering(61);
+//   console.log(javob);
+// }
+// run();
 
 
 
@@ -186,3 +213,41 @@ run();
 //     }
 // })
 
+console.log("Diana maslahatlari");
+const list = [
+    "yahshi talaba boling",//0-20
+    "togrli boshliq tanlang va koproq hato qiling",//20-30
+    "uzingizga ishlashni boshlang",//30-40
+    "sizni kuchli qiladigan narsalarni qiling",//40-50
+    "yoshlarga invistitsiya qiling",//50-60
+    "endi dam oling "//60
+]
+
+async function maslahatbering(a){
+    if(typeof a!== 'number')throw new Error("insert number");
+    else if(a<=20)return list[0];
+    else if (a>20 && a<=30)return list[1];
+    else if (a>30 && a<=40)return list[2];
+    else if (a>40 && a<=50)return list[3];
+    else if (a>50 && a<=60)return list[4];
+    else{
+         return new Promise((resolve,reje))
+        
+    }
+}
+
+async function run(){
+   let javob = await maslahatbering(20);
+   console.log(javob);
+   javob = await maslahatbering(30);
+   console.log(javob);
+   javob = await maslahatbering(60);
+   console.log(javob)
+}
+run()
+// maslahatbering(25)
+// .then(data=>{
+// console.log('Javob', data)
+// }).catch(err=>{
+// console.log('Error', err)
+// })
