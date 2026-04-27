@@ -1,6 +1,7 @@
 const express = require('express');
  const res = require("express/lib/response");
  const app = express();
+ 
 
  //MongoDB chaqirish
 const db = require('./server').db();
