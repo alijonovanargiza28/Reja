@@ -1,18 +1,14 @@
 //B Task
-// function chooseword(word){
-//     let hisob = 0;
-//     for(const harf of word){
-//         if(harf >= '0' && harf <= '9'){
-//             hisob++;
-//         }
-//     }
-//     return hisob;
-// }
-// console.log(chooseword("rejgi46745tehjs5876"))
-
-
-
-
+function chooseword(word){
+    let hisob = 0;
+    for(const harf of word){
+        if(harf >= '0' && harf <= '9'){
+            hisob++;
+        }
+    }
+    return hisob;
+}
+console.log(chooseword("Bizning guruhda 15 ta o`quvchi bor va 2 ta mentor bor 4ta guruh bor biz 41-guruh"))
 
 //A TASK
 // function countLetter(a,word){
@@ -26,16 +22,7 @@
 // }
 // console.log(countLetter("a","Dianaaa"))
 
-function countletter(a,word){
-    let hisob = 0;
-    for(const harf of word){
-        if(harf === a){
-            hisob++;
-        }
-    }
-    return hisob;
-}
-console.log(countletter("b", "bhfghbbrbfcbbbdbdfsb"))
+
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
