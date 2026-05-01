@@ -1,14 +1,58 @@
-//B Task
-function chooseword(word){
-    let hisob = 0;
-    for(const harf of word){
-        if(harf >= '0' && harf <= '9'){
-            hisob++;
-        }
-    }
-    return hisob;
+//C task
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  // vaqt chiqarish
+  vaqt() {
+    let now = new Date();
+    return `${now.getHours()}:${now.getMinutes()}`;
+  }
+
+  // qoldiq
+  qoldiq() {
+    console.log(
+      `Hozir ${this.vaqt()} da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`
+    );
+  }
+
+  // sotish
+  sotish(mahsulot, son) {
+    this[mahsulot] -= son;
+    console.log(
+      `${this.vaqt()} da ${mahsulot}dan ${son}ta sotildi`
+    );
+  }
+
+  // qoshish
+  qoshish(mahsulot, son) {
+    this[mahsulot] += son;
+    console.log(
+      `${this.vaqt()} da ${mahsulot}ga ${son}ta qabul qilindi`
+    );
+  }
 }
-console.log(chooseword("Bizning guruhda 15 ta o`quvchi bor va 2 ta mentor bor 4ta guruh bor biz 41-guruh"))
+
+const shop = new Shop(20, 15, 30);
+
+shop.qoldiq();
+shop.sotish("non", 5);
+shop.qoshish("cola", 40);
+shop.qoldiq();
+//B Task
+// function chooseword(word){
+//     let hisob = 0;
+//     for(const harf of word){
+//         if(harf >= '0' && harf <= '9'){
+//             hisob++;
+//         }
+//     }
+//     return hisob;
+// }
+// console.log(chooseword("Bizning guruhda 15 ta o`quvchi bor va 2 ta mentor bor 4ta guruh bor biz 41-guruh"))
 
 //A TASK
 // function countLetter(a,word){
@@ -200,38 +244,38 @@ console.log(chooseword("Bizning guruhda 15 ta o`quvchi bor va 2 ta mentor bor 4t
 //     }
 // })
 
-console.log("Diana maslahatlari");
-const list = [
-    "yahshi talaba boling",//0-20
-    "togrli boshliq tanlang va koproq hato qiling",//20-30
-    "uzingizga ishlashni boshlang",//30-40
-    "sizni kuchli qiladigan narsalarni qiling",//40-50
-    "yoshlarga invistitsiya qiling",//50-60
-    "endi dam oling "//60
-]
+// console.log("Diana maslahatlari");
+// const list = [
+//     "yahshi talaba boling",//0-20
+//     "togrli boshliq tanlang va koproq hato qiling",//20-30
+//     "uzingizga ishlashni boshlang",//30-40
+//     "sizni kuchli qiladigan narsalarni qiling",//40-50
+//     "yoshlarga invistitsiya qiling",//50-60
+//     "endi dam oling "//60
+// ]
 
-async function maslahatbering(a){
-    if(typeof a!== 'number')throw new Error("insert number");
-    else if(a<=20)return list[0];
-    else if (a>20 && a<=30)return list[1];
-    else if (a>30 && a<=40)return list[2];
-    else if (a>40 && a<=50)return list[3];
-    else if (a>50 && a<=60)return list[4];
-    else{
-         return new Promise((resolve,reje))
+// async function maslahatbering(a){
+//     if(typeof a!== 'number')throw new Error("insert number");
+//     else if(a<=20)return list[0];
+//     else if (a>20 && a<=30)return list[1];
+//     else if (a>30 && a<=40)return list[2];
+//     else if (a>40 && a<=50)return list[3];
+//     else if (a>50 && a<=60)return list[4];
+//     else{
+//          return new Promise((resolve,reje))
         
-    }
-}
+//     }
+// }
 
-async function run(){
-   let javob = await maslahatbering(20);
-   console.log(javob);
-   javob = await maslahatbering(30);
-   console.log(javob);
-   javob = await maslahatbering(60);
-   console.log(javob)
-}
-run()
+// async function run(){
+//    let javob = await maslahatbering(20);
+//    console.log(javob);
+//    javob = await maslahatbering(30);
+//    console.log(javob);
+//    javob = await maslahatbering(60);
+//    console.log(javob)
+// }
+// run()
 // maslahatbering(25)
 // .then(data=>{
 // console.log('Javob', data)

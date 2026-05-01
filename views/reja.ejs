@@ -13,7 +13,7 @@
   </head>
   <body style="background-color: #b8bbd1">
     <div class="container">
-      <h1 class="text-center mb-4">Reja va maqsadlar</h1>
+      <h1 class="text-center mb-4">Plan and Goals</h1>
 
       <div class="jumbotron p-3 shadow-sm">
         <form id="create-form" action="/create-item" method="POST">
@@ -27,28 +27,31 @@
               name="reja"
               style="flex: 1"
             />
-            <button class="btn btn-primary" style="border-radius: 20px">
-             Yangi Reja Qoshish
+            <button class=" btn btn-primary" style="border-radius: 20px">
+             Add new plan
             </button>
           </div>
         </form>
 
         <div class="card-body">
         
-          <ul class="list-group">
+          <ul class="list-group" id="item-list">
           <% items.map(function(item){ %>
-   <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
+   <li 
+   class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
   <span class="item-text"><%=item.reja%></span>
   <div>
-    <button   data-id="<%=item._id%>" class="edit-me btn btn-secondary btn-sm mr-1">o`zgatrirish</button>
-    <button style="background-color: red; color: white;" co data-id="<%=item._id%>" class="delete-me btn btn-denger btn-sm">O`chirish</button>
+    <button  data-id="<%=item._id%>" class="edit-me btn btn-secondary btn-sm mr-1" >Edit</button>
+    <button style="background-color: red; color: white;" data-id="<%=item._id%>" class="delete-me btn btn-denger btn-sm">Delete</button>
 </li>
           <% }) %>
           </ul>
-            <button style= "  margin-top: 20px; border-radius:   15px ; border: none; background-color: red ; "><span style="color: white;">Hamma rejalarni o`chirish</span></button>
+            <button style= "  margin-top: 20px; border-radius:   15px ; border: none; background-color: red ; "><span style="color: white;">Delete all plans</span></button>
           <!-- <p><strong>Delete</strong></p> -->
         </div>
       </div>
     </div>
+    <script src="/browser.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>
