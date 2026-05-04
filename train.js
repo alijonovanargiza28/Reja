@@ -1,47 +1,53 @@
-//C task
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
-
-  // vaqt chiqarish
-  vaqt() {
-    let now = new Date();
-    return `${now.getHours()}:${now.getMinutes()}`;
-  }
-
-  // qoldiq
-  qoldiq() {
-    console.log(
-      `Hozir ${this.vaqt()} da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`
-    );
-  }
-
-  // sotish
-  sotish(mahsulot, son) {
-    this[mahsulot] -= son;
-    console.log(
-      `${this.vaqt()} da ${mahsulot}dan ${son}ta sotildi`
-    );
-  }
-
-  // qoshish
-  qoshish(mahsulot, son) {
-    this[mahsulot] += son;
-    console.log(
-      `${this.vaqt()} da ${mahsulot}ga ${son}ta qabul qilindi`
-    );
-  }
+//D task
+function checkContent(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
 }
 
-const shop = new Shop(20, 15, 30);
+console.log(checkContent("Flexy", "xyleF"));
+//C task
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-shop.qoldiq();
-shop.sotish("non", 5);
-shop.qoshish("cola", 40);
-shop.qoldiq();
+//   // vaqt chiqarish
+//   vaqt() {
+//     let now = new Date();
+//     return `${now.getHours()}:${now.getMinutes()}`;
+//   }
+
+//   // qoldiq
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.vaqt()} da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`
+//     );
+//   }
+
+//   // sotish
+//   sotish(mahsulot, son) {
+//     this[mahsulot] -= son;
+//     console.log(
+//       `${this.vaqt()} da ${mahsulot}dan ${son}ta sotildi`
+//     );
+//   }
+
+//   // qoshish
+//   qoshish(mahsulot, son) {
+//     this[mahsulot] += son;
+//     console.log(
+//       `${this.vaqt()} da ${mahsulot}ga ${son}ta qabul qilindi`
+//     );
+//   }
+// }
+
+// const shop = new Shop(20, 15, 30);
+
+// shop.qoldiq();
+// shop.sotish("non", 5);
+// shop.qoshish("cola", 40);
+// shop.qoldiq();
 //B Task
 // function chooseword(word){
 //     let hisob = 0;
