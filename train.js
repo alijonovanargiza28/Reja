@@ -1,9 +1,19 @@
-//D task
-function checkContent(a, b) {
-  return a.split("").sort().join("") === b.split("").sort().join("");
+//E task
+function word(a){
+    if(typeof a !== "string"){
+        console.log("Iltimos harf kiriting");
+    }else{
+        console.log(a.split("").reverse("").join(""));
 }
+}
+word("Devex")
 
-console.log(checkContent("Flexy", "xyleF"));
+//D task
+// function checkContent(a, b) {
+//   return a.split("").sort().join("") === b.split("").sort().join("");
+// }
+
+// console.log(checkContent("Flexy", "xyleF"));
 //C task
 // class Shop {
 //   constructor(non, lagmon, cola) {
