@@ -11,7 +11,6 @@ function findDoublers(str) {
 console.log(findDoublers("MIT")); 
 console.log(findDoublers("Devex"));   
 
-
 //E task
 // function word(a){
 //     if(typeof a !== "string"){
