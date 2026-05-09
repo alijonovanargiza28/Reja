@@ -1,12 +1,26 @@
+//F task
+function findDoublers(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) !== i) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(findDoublers("MIT")); 
+console.log(findDoublers("Devex"));   
+
+
 //E task
-function word(a){
-    if(typeof a !== "string"){
-        console.log("Iltimos harf kiriting");
-    }else{
-        console.log(a.split("").reverse("").join(""));
-}
-}
-word("Devex")
+// function word(a){
+//     if(typeof a !== "string"){
+//         console.log("Iltimos harf kiriting");
+//     }else{
+//         console.log(a.split("").reverse("").join(""));
+// }
+// }
+// word("Devex")
 
 //D task
 // function checkContent(a, b) {
