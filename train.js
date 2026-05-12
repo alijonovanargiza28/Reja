@@ -1,15 +1,30 @@
-//F task
-function findDoublers(str) {
-  for (let i = 0; i < str.length; i++) {
-    if (str.indexOf(str[i]) !== i) {
-      return true;
+//G tack
+function Index(arr) {
+    let maxIndex = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > arr[maxIndex]) {
+            maxIndex = i;
+        }
     }
-  }
-  return false;
+
+    return maxIndex;
 }
 
-console.log(findDoublers("MIT")); 
-console.log(findDoublers("Devex"));   
+console.log(Index([5, 31, 12, 21, 80]));
+
+//F task
+// function findDoublers(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.indexOf(str[i]) !== i) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(findDoublers("MIT")); 
+// console.log(findDoublers("Devex"));   
 
 //E task
 // function word(a){
