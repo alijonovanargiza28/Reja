@@ -1,14 +1,17 @@
 // Task - H
-function number(data) {
-    arr = []
-    for (let n of data) {
-        if (n >= 0) arr.push(n)
+function number(arr) {
+    let result = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            result += arr[i];
+        }
     }
-    return arr.join("")
+
+    return result;
 }
-console.log(number([1, -4, 2, 50,70,73,20,-4,8,-2]))
 
-
+console.log(number([1, -4, 2, 6, 7, 3, 2, -7])); 
 
 //G tack
 // function Index(arr) {
