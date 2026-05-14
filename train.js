@@ -1,17 +1,29 @@
-//G tack
-function Index(arr) {
-    let maxIndex = 0;
-
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > arr[maxIndex]) {
-            maxIndex = i;
-        }
+// Task - H
+function number(data) {
+    arr = []
+    for (let n of data) {
+        if (n >= 0) arr.push(n)
     }
-
-    return maxIndex;
+    return arr.join("")
 }
+console.log(number([1, -4, 2, 50,70,73,20,-4,8,-2]))
 
-console.log(Index([5, 31, 12, 21, 80]));
+
+
+//G tack
+// function Index(arr) {
+//     let maxIndex = 0;
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > arr[maxIndex]) {
+//             maxIndex = i;
+//         }
+//     }
+
+//     return maxIndex;
+// }
+
+// console.log(Index([5, 31, 12, 21, 80]));
 
 //F task
 // function findDoublers(str) {
