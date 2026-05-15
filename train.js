@@ -1,17 +1,44 @@
-// Task - H
-function number(arr) {
-    let result = "";
+// I TASK
+function majorityElement(arr) {
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            result += arr[i];
+    let count = {};
+    let most = arr[0];
+    let maxCount = 0;
+
+    for (let num of arr) {
+
+        count[num] = (count[num] || 0) + 1;
+
+        if (count[num] > maxCount) {
+            maxCount = count[num];
+            most = num;
         }
     }
 
-    return result;
+    return most;
 }
 
-console.log(number([1, -4, 2, 6, 7, 3, 2, -7])); 
+console.log(
+    majorityElement([1, 2, 3, 4, 5, 4, 3, 4,5,5,5,5,5])
+);
+
+
+
+
+// Task - H
+// function number(arr) {
+//     let result = "";
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 0) {
+//             result += arr[i];
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(number([1, -4, 2, 6, 7, 3, 2, -7])); 
 
 //G tack
 // function Index(arr) {
