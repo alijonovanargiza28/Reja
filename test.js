@@ -1,0 +1,1 @@
+print = "Python Everything is object"

@@ -1,26 +1,41 @@
-// I TASK
-function majorityElement(arr) {
+// TASK J
+function findWord(str) {
+    let words = str.split(" ");
+    let longest = "";
 
-    let count = {};
-    let most = arr[0];
-    let maxCount = 0;
-
-    for (let num of arr) {
-
-        count[num] = (count[num] || 0) + 1;
-
-        if (count[num] > maxCount) {
-            maxCount = count[num];
-            most = num;
+    for (let word of words) {
+        if (word.length > longest.length) {
+            longest = word;
         }
     }
 
-    return most;
+    return longest;
 }
 
-console.log(
-    majorityElement([1, 2, 3, 4, 5, 4, 3, 4,5,5,5,5,5])
-);
+console.log(findWord("I came from Uzbekistan!"));
+// I TASK
+// function majorityElement(arr) {
+
+//     let count = {};
+//     let most = arr[0];
+//     let maxCount = 0;
+
+//     for (let num of arr) {
+
+//         count[num] = (count[num] || 0) + 1;
+
+//         if (count[num] > maxCount) {
+//             maxCount = count[num];
+//             most = num;
+//         }
+//     }
+
+//     return most;
+// }
+
+// console.log(
+//     majorityElement([1, 2, 3, 4, 5, 4, 3, 4,5,5,5,5,5])
+// );
 
 
 
